@@ -1,15 +1,15 @@
 <div id="game-container">
-<div class="flex flex-col items-center justify-center min-h-full p-6 bg-gray-50">
+<div class="flex flex-col items-center justify-center min-h-full p-6" style="background-color: var(--color-bg);">
     <div class="text-center max-w-sm">
-        <h1 class="text-4xl font-bold text-gray-900 mb-2">Soc Ops</h1>
-        <p class="text-lg text-gray-600 mb-8">Social Bingo</p>
+        <h1 class="text-4xl font-bold mb-2" style="color: var(--color-taupe);">Social Bingo</h1>
+        <p class="text-lg mb-8" style="color: var(--color-taupe-muted);">Soc Ops</p>
 
-        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200 mb-8">
-            <h2 class="font-semibold text-gray-800 mb-3">How to play</h2>
-            <ul class="text-left text-gray-600 text-sm space-y-2">
-                <li>• Find people who match the questions</li>
+        <div class="bg-white rounded-lg p-6 shadow-sm border border-taupe-light mb-8" style="border-top: 2px solid var(--color-rust);">
+            <h2 class="font-semibold mb-3" style="color: var(--color-taupe);">Getting Started</h2>
+            <ul class="text-left text-sm space-y-2" style="color: var(--color-taupe-muted);">
+                <li>• Find people around you who match each square</li>
                 <li>• Tap a square when you find a match</li>
-                <li>• Get 5 in a row to win!</li>
+                <li>• Complete 5 in a row to win</li>
             </ul>
         </div>
 
@@ -17,8 +17,9 @@
             hx-post="/start"
             hx-target="#game-container"
             hx-swap="outerHTML"
-            class="w-full bg-accent text-white font-semibold py-4 px-8 rounded-lg text-lg active:bg-accent-light transition-colors">
-            Start Game
+            class="w-full bg-accent text-white font-semibold py-4 px-8 rounded-lg text-lg transition-colors"
+            style="background-color: var(--color-rust);">
+            Play
         </button>
     </div>
 </div>
